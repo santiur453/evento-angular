@@ -5,7 +5,7 @@ import { Component } from '@angular/core';
   <mat-toolbar color="primary">
       Mi Aplicacion
   </mat-toolbar>
-  <lista-eventos></lista-eventos>
+  <router-outlet></router-outlet>
   `
 
 })

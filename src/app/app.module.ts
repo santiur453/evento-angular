@@ -8,6 +8,9 @@ import { ListaEventosComponent } from './eventos/lista-eventos.component';
 import { MaterialModule } from './compartida/material.module';
 import { TarjetaEventoComponent } from './eventos/tarjeta-evento.component';
 import { EventosService } from './eventos/servicios/eventos.service';
+import { DetalleEventoComponent } from './eventos/detalle-evento.component';
+import { RouterModule, Routes }  from '@angular/router';
+import { appRutas } from './rutas';
 
 
 
@@ -15,11 +18,13 @@ import { EventosService } from './eventos/servicios/eventos.service';
   declarations: [
     AppComponent,
     ListaEventosComponent,
-    TarjetaEventoComponent
+    TarjetaEventoComponent,
+    DetalleEventoComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
+    RouterModule.forRoot(appRutas),
     MaterialModule
   ],
   providers: [ EventosService ],
