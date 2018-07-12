@@ -11,6 +11,8 @@ import { EventosService } from './eventos/servicios/eventos.service';
 import { DetalleEventoComponent } from './eventos/detalle-evento.component';
 import { RouterModule, Routes }  from '@angular/router';
 import { appRutas } from './rutas';
+import { ToolbarComponent } from './toolbar/toolbar.component';
+import { NuevoEventoComponent } from './eventos/nuevo/nuevo.component';
 
 
 
@@ -19,7 +21,9 @@ import { appRutas } from './rutas';
     AppComponent,
     ListaEventosComponent,
     TarjetaEventoComponent,
-    DetalleEventoComponent
+    DetalleEventoComponent,
+    ToolbarComponent,
+    NuevoEventoComponent
   ],
   imports: [
     BrowserModule,

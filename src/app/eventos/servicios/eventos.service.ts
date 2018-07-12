@@ -5,6 +5,10 @@ export class EventosService {
     obtenerEventos(){
         return EVENTOS;
     }
+
+    obtenerEventoPorId(id: number){
+        return EVENTOS.find( e => e.id === id);
+    }
 }
 
 const EVENTOS = [
@@ -17,40 +21,40 @@ const EVENTOS = [
         ciudad: 'Bogota'
     },
     {
-        id: 1,
-        nombre: 'Conferencia Angular',
+        id: 2,
+        nombre: 'Conferencia React',
         fecha: '20/08/2018',
         imagenUrl: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
         descripcion: 'Un Super evento de Angular',
         ciudad: 'Bogota'
     },
     {
-        id: 1,
-        nombre: 'Conferencia Angular',
+        id: 3,
+        nombre: 'Conferencia Vue',
         fecha: '20/08/2018',
         imagenUrl: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
         descripcion: 'Un Super evento de Angular',
         ciudad: 'Bogota'
     },
     {
-        id: 1,
-        nombre: 'Conferencia Angular',
+        id: 4,
+        nombre: 'Conferencia Ionic',
         fecha: '20/08/2018',
         imagenUrl: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
         descripcion: 'Un Super evento de Angular',
         ciudad: 'Bogota'
     },
     {
-        id: 1,
-        nombre: 'Conferencia Angular',
+        id: 5,
+        nombre: 'Conferencia Rails',
         fecha: '20/08/2018',
         imagenUrl: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
         descripcion: 'Un Super evento de Angular',
         ciudad: 'Bogota'
     },
     {
-        id: 1,
-        nombre: 'Conferencia Angular',
+        id: 6,
+        nombre: 'Conferencia Graphql',
         fecha: '20/08/2018',
         imagenUrl: 'https://material.angular.io/assets/img/examples/shiba2.jpg',
         descripcion: 'Un Super evento de Angular',

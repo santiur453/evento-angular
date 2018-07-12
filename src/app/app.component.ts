@@ -2,9 +2,7 @@ import { Component } from '@angular/core';
 @Component({
   selector: 'app-root',
   template: `
-  <mat-toolbar color="primary">
-      Mi Aplicacion
-  </mat-toolbar>
+  <app-toolbar></app-toolbar>
   <router-outlet></router-outlet>
   `
 
