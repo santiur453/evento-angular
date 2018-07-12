@@ -2,7 +2,6 @@ import {Component} from '@angular/core';
 import { EventosService } from './servicios/eventos.service';
 
 @Component({
-    selector: 'lista-eventos',
     template: `
     <div class="contenedor">
         <tarjeta-evento *ngFor="let evento1 of eventos"

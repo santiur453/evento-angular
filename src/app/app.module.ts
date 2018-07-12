@@ -6,7 +6,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { ListaEventosComponent } from './eventos/lista-eventos.component';
 import { MaterialModule } from './compartida/material.module';
-import { TarjetaEventoComponent } from './eventos/tarjeta-evento.component';
+import { TarjetaEventoComponent } from './eventos/tarjeta/tarjeta-evento.component';
 import { EventosService } from './eventos/servicios/eventos.service';
 import { DetalleEventoComponent } from './eventos/detalle-evento.component';
 import { RouterModule, Routes }  from '@angular/router';
