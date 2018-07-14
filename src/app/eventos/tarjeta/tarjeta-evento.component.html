@@ -1,6 +1,6 @@
 <mat-card class="example-card" [routerLink]="['/eventos', evento.id]">
     <mat-card-header>
-        <div mat-card-avatar class="example-header-image"></div>
+        <img mat-card-avatar  class="example-header-image"  [src]="evento.imagenUrl" alt="Photo of a Shiba Inu">
         <mat-card-title>{{evento.nombre}}</mat-card-title>
         <mat-card-subtitle>{{evento.fecha}} - {{evento.ciudad}}</mat-card-subtitle>
     </mat-card-header>

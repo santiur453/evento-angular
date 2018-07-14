@@ -9,6 +9,12 @@ export class EventosService {
     obtenerEventoPorId(id: number){
         return EVENTOS.find( e => e.id === id);
     }
+    obtenerID(){
+        return EVENTOS[EVENTOS.length-1].id+1
+    }
+    inputEventos(evento){
+        EVENTOS.push(evento)
+    }
 }
 
 const EVENTOS = [
